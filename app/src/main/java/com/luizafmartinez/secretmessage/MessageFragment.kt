@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 
 class MessageFragment : Fragment() {
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
