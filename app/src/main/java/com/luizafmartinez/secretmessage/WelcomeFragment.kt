@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.findNavController
 
 class WelcomeFragment : Fragment() {
     override fun onCreateView(
@@ -23,7 +24,10 @@ class WelcomeFragment : Fragment() {
 
         startButton.setOnClickListener {
             // code that runs when the button is clicked
+            view.findNavController()
+                .navigate(R.id.action_welcomeFragment_to_messageFragment)
         }
+
         return view
     }
 }
