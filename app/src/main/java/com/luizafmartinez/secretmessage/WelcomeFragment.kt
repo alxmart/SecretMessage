@@ -19,15 +19,12 @@ class WelcomeFragment : Fragment() {
             container,
             false
         )
-
         val startButton = view.findViewById<Button>(R.id.start)
-
         startButton.setOnClickListener {
             // code that runs when the button is clicked
             view.findNavController()
                 .navigate(R.id.action_welcomeFragment_to_messageFragment)
         }
-
         return view
     }
 }
